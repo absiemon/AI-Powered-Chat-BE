@@ -32,6 +32,7 @@ app.use(requestLogger);
  * currently available vs in cooldown, which is invaluable when
  * debugging quota issues.
  */
+
 app.get('/health', (_req, res) => {
   res.status(200).json({
     status: 'ok',
